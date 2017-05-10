@@ -14,7 +14,7 @@ int inc = 0;
 int vx_water = 0;
 int vx_bg = 0;
 int vx_cloud;
-int gdelay = 20;
+int gdelay = 50;
 int ground = 450;
 int y_water = ground +130;
 int gamestate = 1, score = 0, highScore = 0, x = 0, y=ground, vy = 0;
@@ -24,7 +24,7 @@ int cloudX[] = new int [2], cloudY[]=new int[2];
 boolean isMoving=true;
 boolean isDrowning = false;
 boolean isDoubleJump = false;
-int catSkin = 1;
+int catSkin = 9;
 
 void setup() {
 port = new Serial(this, Serial.list()[0], 9600);
